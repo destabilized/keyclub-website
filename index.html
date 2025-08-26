@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medford HS - Key Club</title>
+  <meta name="description" content="Official website for Your School Key Club — service, leadership, inclusivity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css" />
+
+
+  <!-- vercel analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- skip link for accessibility (tab) -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- header stuff -->
+
+  <div id="top-anchor"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top-anchor" aria-label="Key Club Home">
+        <i class='bx  bx-key-alt logo'  ></i> 
+        <span>MHS Key Club</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <button id="navClose" class="nav-close" aria-label="Close menu">&times;</button>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#officers" class="nav-link">Officers</a>
+        <a href="#join" class="nav-link">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="section hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Building leadership through service</h1>
+        <p> 
+          At MHS, our Key Club members are dedicated to helping out their communities through service and volunteerism. 
+          Make friends, obtain community service hours, and create an impact in our community.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#join">Join the Club</a>
+          <a class="btn ghost" href="#events">Upcoming Events</a>
+        </div>
+      </div>
+
+      <div class="hero-card" role="img" aria-label="Students volunteering together">
+        <img src="imgs/food-drive.jpg">
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="card stats">
+          <div>
+            <span class="stat" id="hoursStat">0</span>
+            <span class="label">Service Hours (YTD)</span>
+          </div>
+          <div>
+            <span class="stat" id="membersStat">0</span>
+            <span class="label">Active Members</span>
+          </div>
+          <div>
+            <span class="stat" id="projectsStat">0</span>
+            <span class="label">Projects Completed</span>
+          </div>
+        </div>
+
+        <div>
+          <h2>About Us</h2>
+          <p>We are the <strong>MHS</strong> Key Club, in the New England District, Division 9. We meet in <strong>Room C113 after school on the last Thursday of each month</strong>. Everyone is welcome.</p>
+          
+          <ul class="checks">
+            <li>Service opportunities for all</li>
+          </ul>
+
+          <a class="btn" href="#join">Become a Member</a>
+        </div>
+      </div>
+    </section>
+
+<!-- events -->
+<section id="events" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Events</h2>
+
+      <div class="filters">
+        <input id="eventSearch" class="input" type="search" placeholder="Search events (e.g., park clean-up)" aria-label="Search events" />
+        <select id="eventFilter" class="input" aria-label="Filter events by type">
+          <option value="all">All types</option>
+          <option value="service">Service</option>
+          <option value="social">Social</option>
+          <option value="food-drive">Food Drive</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="eventsGrid" class="grid-cards" aria-live="polite">
+
+      <div class="card event" data-type="social completed">
+        <h3>Letters For Love</h3>
+        <p class="meta"><i class='bx  bx-calendar-alt'  ></i>  May 1st, 2025 | <i class='bx  bx-location'  ></i>  Medford High School</p>
+        <p class="blurb">
+Key Club members created heartfelt cards containing messages that were sent to hospitalized kids suffering from chronic, life-threatening diseases, with the goal of uplifting their spirits.</p>
+      </div>
+
+      <div class="card event" data-type="service completed">
+        <h3>Rainbarrel Distribution</h3>
+        <p class="meta"><i class='bx  bx-calendar-alt'  ></i>  May 14th, 2025 | <i class='bx  bx-location'  ></i>  Medford High School </p>
+        <p class="blurb">
+          The City of Medford partnered with the Great American Rain Barrel Company to provide discounted rain barrels to Medford residents. 
+          Key Club members helped direct those who purchased rain barrels and loaded them onto their cars.
+        </p>
+      </div>      
+      
+      <div class="card event" data-type="service completed">
+        <h3>MHS Science Fair</h3>
+        <p class="meta"><i class='bx  bx-calendar-alt'  ></i>  Apr. 10th, 2025 | <i class='bx  bx-location'  ></i>  Medford High School </p>
+        <p class="blurb">
+          During MHS's yearly science fair, Key Club members help set up the science lecture hall and organize the room to provide a space for both contestants and judges.
+        </p>
+      </div>
+
+      <div class="card event" data-type="food-drive completed">
+        <h3>Unitarian Universalist Church of Medford Food Drive</h3>
+        <p class="meta"><i class='bx  bx-calendar-alt'  ></i>  Feb. 27th - Mar. 27th, 2025 | <i class='bx  bx-location'  ></i>  MHS </p>
+        <p class="blurb">
+          Throughout the month of March, MHS Key Club members donated a plethora of non-perishable food items to the Unitarian Universalist Church of Medford's food pantry to help families in need.
+        </p>
+      </div>
+
+    <p id="eventsEmpty" class="muted" hidden>No events match your search.</p>
+  </div>
+</section>
+
+    <!-- officers -->
+    <section id="officers" class="section">
+      <div class="container">
+        <h2>2025–2026 Officers</h2>
+        <div id="officersGrid" class="grid-cards small"></div>
+      </div>
+    </section>
+
+    <!-- join -->
+    <section id="join" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Join Key Club</h2>
+          <p>Ready to get involved? Fill out the quick form and we’ll email you the membership form within 24 hours.</p>
+          <form id="joinForm" class="form card" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" class="input" required />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" class="input" type="email" required />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="field">
+              <label for="grad">Graduation year</label>
+              <select id="grad" name="grad" class="input" required>
+                <option value="">Select...</option>
+                <option>2026</option><option>2027</option><option>2028</option><option>2029</option>
+              </select>
+              <small class="error" id="gradError"></small>
+            </div>
+            <div class="field">
+              <label for="interests">Reason for Joining</label>
+              <input id="interests" name="interests" class="input" placeholder="e.g., volunteer hours, service" />
+            </div>
+            <button class="btn primary" type="submit">Submit</button>
+            <p id="formSuccess" class="success" hidden>Thanks! We’ll be in touch within 24 hours.</p>
+          </form>
+        </div>
+        <div class="card info">
+          <h2>More Details</h2>
+          <ul class="meta">
+            <li><strong>When:</strong> Wednesdays · 3:40–4:00 PM</li>
+            <li><strong>Where:</strong> Room C113 (Ms. Rabalais)</li>
+            <li><strong>Google Classroom Code:</strong> Pce4csh</li>
+            <li><strong>Hours: </strong> <a href="https://docs.google.com/spreadsheets/d/1grkUqjkdPwfh1lgLY2qTUaJRgx6XoFJrwKmmJ2Ok7kA/edit?authuser=1&usp=classroom_web" target="_blank" rel="noopener" aria-label="Key Club Hours Log"> Community Service Log</a></li>
+            <li><strong>Additional Opportunities:</strong> <a href="https://docs.google.com/document/d/1zjxi6cBHEw6AYyGCH8GiF3A9-ktFfCdQuzh-8c36ixo/edit?tab=t.0" target="_blank" rel="noopener" aria-label="Additional Opportunities"> Click here </a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/medfordkeyclub/" target="_blank" rel="noopener noreferrer" aria-label="Instagram handle">@medfordkeyclub</a></li>
+            <li><strong>More Information:</strong> <a href="https://www.keyclub.org/" target="_blank" rel="noopener noreferrer" aria-label="Key Club Official Website">Click Here</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MHS Key Club. All rights reserved. | Made by <a href="https://andrewhuang.vercel.app/" target="_blank" rel="noopener noreferrer">Andrew Huang</a></p>
+      <a class="to-top" href="#hero" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
