@@ -34,6 +34,9 @@ a {
   color: var(--text-muted);
 }
 
+.no-color {
+  color: var(--brand);
+}
 .container {
   max-width: 1100px;
   margin-inline: auto;
